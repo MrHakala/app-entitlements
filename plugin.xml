@@ -2,10 +2,10 @@
 <plugin id="app-entitlements" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
   <name>AppEntitlements</name>
   <platform name="ios">
-    <config-file target="Entitlements-Debug.plist" parent="aps-environment" overwrite="true" mode="replace">
+    <config-file target="*-Debug.plist" parent="aps-environment" overwrite="true" mode="replace">
       <string>development</string>
     </config-file>
-    <config-file target="Entitlements-Release.plist" parent="aps-environment" overwrite="true" mode="replace">
+    <config-file target="*-Release.plist" parent="aps-environment" overwrite="true" mode="replace">
       <string>production</string>
     </config-file>      
   </platform>
